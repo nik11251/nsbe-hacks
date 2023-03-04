@@ -1,7 +1,6 @@
-import React from "react";
-import ReactDOM from 'react-dom';
+import React, {useState} from "react";
 
-const About = () => {
+const Home = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     //User inputs are required
