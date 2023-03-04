@@ -9,15 +9,15 @@ import {
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route
-      path="/"
-      element={<Home />}
-    >
-        <Route
-          path="/selection"
-          element={<Home />}
-        />
+    <Route path="/" element={<Home/>} >
+      <Route path="/nsbe-hacks" element={<Home />}>
+      </Route>
+      <Route
+              path="/selection"
+              element={<Home />}
+              />
     </Route>
+    
   )
 );
 
