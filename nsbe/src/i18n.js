@@ -9,14 +9,13 @@ const resources = {
     translation: {
       "Welcome to React": "Welcome to React and react-i18next",
       "Login:": "Login",
-      "Company Name":"Company Name"
+      "Company Name":"Company Name",
+      "Welcome to React": "Welcome to React and react-i18next"
     }
   },
   fr: {
     translation: {
-      "Welcome to React": "Bienvenue à React et react-i18next",
-      "Login:": "Connexion",
-      "Company Name":"Company Name"
+      "Welcome to React": "Bienvenue à React et react-i18next"
     }
   }
 };
