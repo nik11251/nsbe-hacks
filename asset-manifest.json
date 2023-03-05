@@ -1,10 +1,15 @@
 {
-  "files": {
-    "main.js": "/nsbe-hacks/static/js/main.8a94d01b.js",
-    "index.html": "/nsbe-hacks/index.html",
-    "main.8a94d01b.js.map": "/nsbe-hacks/static/js/main.8a94d01b.js.map"
-  },
-  "entrypoints": [
-    "static/js/main.8a94d01b.js"
-  ]
+  "main.css": "/nsbe-hacks/static/css/main.6800ec2e.chunk.css",
+  "main.js": "/nsbe-hacks/static/js/main.70d4edf8.chunk.js",
+  "main.js.map": "/nsbe-hacks/static/js/main.70d4edf8.chunk.js.map",
+  "runtime~main.js": "/nsbe-hacks/static/js/runtime~main.3111d029.js",
+  "runtime~main.js.map": "/nsbe-hacks/static/js/runtime~main.3111d029.js.map",
+  "static/js/2.88910fdb.chunk.js": "/nsbe-hacks/static/js/2.88910fdb.chunk.js",
+  "static/js/2.88910fdb.chunk.js.map": "/nsbe-hacks/static/js/2.88910fdb.chunk.js.map",
+  "index.html": "/nsbe-hacks/index.html",
+  "precache-manifest.4bf9a6b8c3ce5c8402ea9f53524fa0b2.js": "/nsbe-hacks/precache-manifest.4bf9a6b8c3ce5c8402ea9f53524fa0b2.js",
+  "service-worker.js": "/nsbe-hacks/service-worker.js",
+  "static/css/main.6800ec2e.chunk.css.map": "/nsbe-hacks/static/css/main.6800ec2e.chunk.css.map",
+  "static/media/Uoft.png": "/nsbe-hacks/static/media/Uoft.b9c68d4c.png",
+  "static/media/people.jpg": "/nsbe-hacks/static/media/people.d0d1b06e.jpg"
 }
