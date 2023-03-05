@@ -26,11 +26,11 @@ function App() {
             />
             <Route
                 path="/nsbe-hacks/login"
-                
+                element={<Login />}
             />
             <Route
                 path="/nsbe-hacks/signup"
-                
+                element={<Signup />}
             />
             </Route>
         )
