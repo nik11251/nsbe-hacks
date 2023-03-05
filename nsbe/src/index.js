@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './i18n';
 import App from './App';
 import * as AWS from 'aws-sdk'
+import { HashRouter } from 'react-router-dom';
 
 const configuration = {
     region: 'us-east-1',
@@ -15,6 +16,6 @@ AWS.config.update(configuration)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <App />
   </React.StrictMode>
 );

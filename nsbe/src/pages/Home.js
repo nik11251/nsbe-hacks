@@ -4,6 +4,7 @@ import axios from "axios";
 
 
 
+
 const Home = () => {
   const [companyName, setCompanyName] = useState("");
   const [showImages, setShowImages] = useState(false);
@@ -23,7 +24,7 @@ const Home = () => {
       {
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer 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`,
+          Authorization: `Bearer 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`,
         },
       }
     );
@@ -42,7 +43,7 @@ const Home = () => {
 
 
   useEffect(() => {
-    const name = "This project has been developed for the hackathon NSBE. It is meant to assist minorities by easing their troubles my providing them access to well trusted therapists working on pro bono cases. Furthermore, the website utilizes an API from OpenAi to integrate a chat bot for users to ask general or inquisitive questions. We have also provided users with the ability to speak to like minded individuals about their problems via webcams and mic, while allowing them to rate their experience at the end of a call. These ratings will be used ti match those of similar levels together, hopefully bettering the experience for users. We pride ourselves in inclusivity and are always working towards supporting those in need.";
+    const name = "This project was developed for the NSBE hackathon to help minorities by providing them with access to trustworthy therapists who work on pro bono cases. The website also integrates an OpenAI API to provide users with a chatbot to ask general or inquisitive questions. Additionally, users can talk to like-minded individuals about their problems using webcams and microphones, and rate their experience at the end of a call. These ratings will be used to match users with similar levels to improve the user experience. We are committed to inclusivity and always strive to support those in need.";
     let interval;
 
     const updateCompanyName = () => {
@@ -88,8 +89,6 @@ const Home = () => {
 
          </div>
 
-
-
         {showImages && (
            <div className="image-container">
              <img src={require("./people.jpg")} alt="people" />
@@ -98,24 +97,38 @@ const Home = () => {
 
   </div>
   <div class="grid-item">
+
+  <div class="suptop-row">
+      {/* <!-- suptop row of right column content goes here --> */}
+      <h2 className="head2"> Chat Bot</h2>
+    </div>
+
     <div class="top-row">
       {/* <!-- Top row of right column content goes here --> */}
-      <h2>Chat Bot</h2>
+     
            <textarea
+           
             value={input}
              onChange={(event) => setInput(event.target.value)}
-             rows={10} cols={40}
+            rows={10} cols={40} 
              placeholder="Type Here..."
+             style={{ backgroundColor: "white", color: "black",  borderRadius: "10px", border: "1px solid black", padding: "10px"}}
 
-           />
-           <button className="button" onClick={handleClick}>
+             />
+           
+    </div>
+
+    <div class="mid-row">
+      {/* <!-- MId row of right column content goes here --> */}
+      <button className="button" onClick={handleClick}>
              Complete Sentence
            </button>
     </div>
+
     <div class="bottom-row">
       {/* <!-- Bottom row of right column content goes here --> */}
       {completedSentence && (
-             <div className="completed-sentence">Completed sentence: {completedSentence}</div>
+             <div className="completed-sentence">Output: {completedSentence}</div>
        )}
     </div>
   </div>

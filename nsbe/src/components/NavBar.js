@@ -1,6 +1,7 @@
 import React from "react";
 import ChangeLanguage from "./ChangeLanguage";
 import { withTranslation } from "react-i18next";
+import "./NavBar.css"
 
 const NavBar = (props) => {
     const {t} = props

@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Bubblegum Sans' ); 
+
 body {
-    background: linear-gradient(to right, #ffd9a1 50%, #a6c9ff 50%);
-    color: #333;
+    background: linear-gradient(to right, var(--c3) 50%, var(--c2) 50%);
+    color: white;
   }
   
   .container {
@@ -10,12 +12,16 @@ body {
   .header {
     display: flex;
     align-items: center;
+    
+    
   }
   
   .login {
     font-size: 50px;
     margin-top: 0;
     padding-left: 30px;
+    font-family: 'Bubblegum Sans',cursive; 
+    font-size: 50px;    
   }
   
   .image {
@@ -27,8 +33,7 @@ body {
   
   .company-name {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     font-size: 25px;
     padding: 0 20px;
     margin: 20px 0;
@@ -37,11 +42,18 @@ body {
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+    
   }
   
   .image-container {
-    max-width: 300px;
-    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .head2 {
+    color: white;
+    font-family: 'Bubblegum Sans',cursive; 
+    font-size: 30px;
   }
   
   label {
@@ -63,19 +75,25 @@ body {
     margin-top: 0;
   }
   
-  .chatbot-container textarea {
-    width: 100%;
-    resize: none;
-    background-color: black;
+  
+  .button {
+    background-color: var(--c5);
+    border: none;
     color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    
   }
-  
-  
-  .chatbot-container .button {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 10px;
-  }
+
+  .button:hover {opacity: 0.8}
   
   .chatbot-container p {
     margin: 10px 0;
@@ -91,6 +109,71 @@ body {
     display: table-cell;
     
     
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+  }
+  
+  .grid-item {
+     /* border: 1px solid #ccc;  */
+    padding: 20px;
+  }
+  
+   .top-row, .mid-row, .bottom-row {
+    padding: 15px;
+    
+    
+  }
+
+  .suptop-row, .top-row {
+    padding: 0;
+  }
+
+  .suptop-row{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    color: #469597;
+
+  }
+  
+  .top-row {
+    display: flex;
+    justify-content: center;
+ 
+  }
+
+  .mid-row{
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  .bottom-row {
+    display: flex;
+    background-color: var(--c5);
+    height: 125px;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #000000;
+  
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 767px) {
+    .grid-container {
+      display: block; /* Switch to a single column layout on small screens */
+    }
+  }
+
+  :root {
+    --c1: #469597;
+    --c2: #5BA199;
+    --c3: #BBC6C8;
+    --c4: #E5E3E4;
+    --c5: #DDBEAA;
   }
   
   
