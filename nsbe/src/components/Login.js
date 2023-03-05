@@ -2,23 +2,19 @@ import React, {useState} from "react";
 import useToken from "../hooks/useToken";
 
 import {fetchData, putData} from '../utils/AWSFunctions';
-
-const loginUser = async (credentials) => {
-    return fetchData('users', credentials)
-}
+import userData from "../assets/userData.json"
 
 const Login = (props) => {
     const {setToken} = props
     const [username, setUserName] = useState();
     const [password, setPassword] = useState();
 
+    const userDatas = userData
+
     const handleSubmit = async e => {
         e.preventDefault();
-        const token = await loginUser({
-          username,
-          password
-        });
-        setToken(token);
+        console.log(username)
+        setToken(username)
     }
 
     return(

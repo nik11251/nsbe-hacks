@@ -18,11 +18,11 @@ import Video3 from "./pages/Video3/webpack.config";
 import VideoApp from "./pages/Video/VideoApp";
 
 function App() {
-    const { token, setToken } = useToken()
+    const {token, setToken} = useToken()
 
     return (
         <div>
-            <NavBar />
+            <NavBar token={token}/>
             <React.StrictMode>
 
                     <BrowserRouter>
@@ -59,10 +59,6 @@ function App() {
                                 <Route
                                     path="/nsbe-hacks/video2/room"
                                     element={<RoomPage />}
-                                />
-                                <Route
-                                    path="/nsbe-hacks/video3"
-                                    element={<Video3 />}
                                 />
                                 <Route
                                     path="/nsbe-hacks/video"

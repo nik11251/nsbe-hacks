@@ -13,6 +13,8 @@ const configuration = {
 
 AWS.config.update(configuration)
 
+localStorage.setItem('token', "first_user");
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

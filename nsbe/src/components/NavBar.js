@@ -2,9 +2,10 @@ import React from "react";
 import ChangeLanguage from "./ChangeLanguage";
 import { withTranslation } from "react-i18next";
 import "./NavBar.css"
+import useToken from "../hooks/useToken";
 
 const NavBar = (props) => {
-    const {t} = props
+    const {t, token} = props
 
     return (
         <nav>
@@ -14,7 +15,7 @@ const NavBar = (props) => {
                 <li><a href="/nsbe-hacks/signup">{t("sign up")}</a></li>
                 <li><a href="/nsbe-hacks/video2">{t("video2")}</a></li>
                 <li><a href="/nsbe-hacks/video">{t("video")}</a></li>
-                <li><ChangeLanguage/></li>
+                <li>I am {token}</li>
             </ul>
         </nav>
     );

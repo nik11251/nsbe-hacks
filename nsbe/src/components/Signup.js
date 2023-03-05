@@ -4,11 +4,10 @@ import useToken from "../hooks/useToken";
 import {fetchData, putData} from '../utils/AWSFunctions';
 
 const signUpUser = async (credentials) => {
-    return putData('users', credentials)
+    return localStorage.setItem('token', credentials.username)
 }
 
 const Signup = (props) => {
-    const {setToken} = props
     const [username, setUserName] = useState();
     const [password, setPassword] = useState();
     const [email, setEmail] = useState();
@@ -27,7 +26,6 @@ const Signup = (props) => {
             username,
             password
         })
-        setToken(token);
     }
 
     return(
