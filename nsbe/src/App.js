@@ -12,6 +12,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 
 function App() {
+    const {token, setToken} = useToken()
 
     const router = createBrowserRouter(
         createRoutesFromElements(
