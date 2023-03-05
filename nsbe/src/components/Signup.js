@@ -3,21 +3,30 @@ import useToken from "../hooks/useToken";
 
 import {fetchData, putData} from '../utils/AWSFunctions';
 
-const loginUser = async (credentials) => {
-    return fetchData('users', credentials)
+const signUpUser = async (credentials) => {
+    return putData('users', credentials)
 }
 
-const Login = (props) => {
+const Signup = (props) => {
     const {setToken} = props
     const [username, setUserName] = useState();
     const [password, setPassword] = useState();
+    const [email, setEmail] = useState();
+    const [repeatPassword, setRepeatPassword] = useState();
+    
 
     const handleSubmit = async e => {
         e.preventDefault();
-        const token = await loginUser({
-          username,
-          password
+        await signUpUser({
+            email,
+            username,
+            password,
+            repeatPassword
         });
+        const token = fetchData({
+            username,
+            password
+        })
         setToken(token);
     }
 
@@ -26,12 +35,20 @@ const Login = (props) => {
             <h1>Please Log In</h1>
             <form onSubmit={handleSubmit}>
             <label>
+                <p>Email</p>
+                <input type="text" onChange={e => setEmail(e.target.value)}/>
+            </label>
+            <label>
                 <p>Username</p>
                 <input type="text" onChange={e => setUserName(e.target.value)}/>
             </label>
             <label>
                 <p>Password</p>
                 <input type="password" onChange={e => setPassword(e.target.value)}/>
+            </label>
+            <label>
+                <p>Repeat your password</p>
+                <input type="password" onChange={e => setRepeatPassword(e.target.value)}/>
             </label>
             <div>
                 <button type="submit">Submit</button>
@@ -41,4 +58,4 @@ const Login = (props) => {
     )
 }
 
-export default Login
+export default Signup
