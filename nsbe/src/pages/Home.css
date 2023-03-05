@@ -1,0 +1,51 @@
+body {
+    background: linear-gradient(to right, #FFD9A1 50%, #A6C9FF 50%);
+    color: #333;
+}
+
+.container {
+    width: 50%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.login {
+    font-size: 50px;
+    margin-top: 0;
+    padding-left: 30px;
+}
+
+.image {
+    max-width: 150px;
+    height: auto;
+    margin: 10px;
+    margin-left: 400px;
+}
+
+.company-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    padding: 0 20px;
+    margin: 20px 0;
+    font-family: cursive;
+    background-image: linear-gradient(to left, #000000, #5A5A5A);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+}
+
+.image-container {
+    max-width: 300px;
+    margin-left: 200px;
+}
+
+
+label {
+    font-weight: bold;
+}
