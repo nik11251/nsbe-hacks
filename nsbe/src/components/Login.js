@@ -18,7 +18,6 @@ const Login = (props) => {
           username,
           password
         });
-        console.log(1)
         setToken(token);
     }
 
