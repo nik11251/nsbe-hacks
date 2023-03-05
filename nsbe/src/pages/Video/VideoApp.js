@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "@material-ui/core";
 import VideoCall from "./VideoCall";
+import "./index.css"
 
 function VideoApp() {
   const [inCall, setInCall] = useState(false);
@@ -10,13 +11,16 @@ function VideoApp() {
       {inCall ? (
         <VideoCall setInCall={setInCall} />
       ) : (
-        <Button
-          variant="contained"
-          color="primary"
-          onClick={() => setInCall(true)}
-        >
-          Join Call
-        </Button>
+
+        <div className = "button1">
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={() => setInCall(true)}
+          >
+            Join Call
+          </Button>
+        </div>
       )}
     </div>
   );

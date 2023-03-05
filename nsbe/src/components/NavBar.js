@@ -11,12 +11,12 @@ const NavBar = (props) => {
         <nav>
             <ul className="list-item">
                 <li><a href="/nsbe-hacks">{t("Home")}</a></li>
-                <li><a href="/nsbe-hacks/login">{t("login")}</a></li>
-                <li><a href="/nsbe-hacks/signup">{t("sign up")}</a></li>
-                <li><a href="/nsbe-hacks/video2">{t("video2")}</a></li>
-                <li><a href="/nsbe-hacks/video">{t("video")}</a></li>
-                <li><a href="/nsbe-hacks/video4">{t("video4")}</a></li>
-                <li>I am {token}</li>
+                <li><a href="/nsbe-hacks/login">{t("Login")}</a></li>
+                <li><a href="/nsbe-hacks/signup">{t("Sign Up")}</a></li>
+                <li><a href="/nsbe-hacks/video2">{t("Party")}</a></li>
+                <li><a href="/nsbe-hacks/video">{t("Video")}</a></li>
+                <li><a href="/nsbe-hacks/video4">{t("Pin Vid")}</a></li>
+                
             </ul>
         </nav>
     );
