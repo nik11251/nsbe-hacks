@@ -7,9 +7,9 @@ function VideoPlayer(props){
 
     const settings = {
         url: "https://youtu.be/OyDyOweu-PA",
-        minInterval: 0,
-        maxInterval: 0,
-        pauseDuration: 0,
+        minInterval: 10000,
+        maxInterval: 10000,
+        pauseDuration: 10000,
     }
     const [playing, setPlaying] = useState(false);
     const [played, setPlayed] = useState(0);
@@ -32,18 +32,6 @@ function VideoPlayer(props){
         settings.url = event.target.value
     }
 
-    const handleMinIntervalChange = (event) =>{
-        settings.minInterval = event.target.value
-    }
-
-    const handleMaxIntervalChange = (event) =>{
-        settings.maxInterval = event.target.value
-    }
-
-    const handlePauseDurationChange = (event) =>{
-        settings.pauseDuration = event.target.value
-    }
-
     const onProgress = (progress) => {
         setPlayed(progress.playedSeconds);
         const deltaTime = played - lastPause;
@@ -64,24 +52,18 @@ function VideoPlayer(props){
     return (
         <div>
             <input onChange={handleUrlChange} type="text" placeholder="Video url" />
-            <br/>
-            <br/>
-            <input onChange={handleMinIntervalChange} type="number" placeholder="Min duration of playing"/>
-            <br/>
-            <br/>
-            <input onChange={handleMaxIntervalChange} type="number" placeholder="Max duration of playing"/>
-            <br/>
-            <br/>
-            <input onChange={handlePauseDurationChange} type="number" placeholder="Pause duration"/>
-            <br/>
-            <br/>
             <button onClick={handleSubmit}>PLAY VIDEO</button>
-            <ReactPlayer 
-                url={url} 
-                controls={true} 
-                playing={playing}
-                onProgress={onProgress}
-            />
+
+            <div style={{alignContent: "horizontaly"}}>
+
+                <ReactPlayer 
+                    url={url} 
+                    controls={true} 
+                    playing={playing}
+                    onProgress={onProgress}
+                />
+                <iframe style = {{}} src="https://deadsimplechat.com/UVSRrOR72" width="400px" height="600px"></iframe>
+            </div>
         </div>
     );
 }
