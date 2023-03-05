@@ -1,51 +1,96 @@
 body {
-    background: linear-gradient(to right, #FFD9A1 50%, #A6C9FF 50%);
+    background: linear-gradient(to right, #ffd9a1 50%, #a6c9ff 50%);
     color: #333;
-}
-
-.container {
+  }
+  
+  .container {
     width: 50%;
-}
-
-.header {
+  }
+  
+  .header {
     display: flex;
     align-items: center;
-}
-
-.login {
+  }
+  
+  .login {
     font-size: 50px;
     margin-top: 0;
     padding-left: 30px;
-}
-
-.image {
+  }
+  
+  .image {
     max-width: 150px;
     height: auto;
     margin: 10px;
-    margin-left: 400px;
-}
-
-.company-name {
+    margin-left: 500px;
+  }
+  
+  .company-name {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     font-size: 25px;
     padding: 0 20px;
     margin: 20px 0;
     font-family: cursive;
-    background-image: linear-gradient(to left, #000000, #5A5A5A);
+    background-image: linear-gradient(to left, #000000, #5a5a5a);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-
-}
-
-.image-container {
+  }
+  
+  .image-container {
     max-width: 300px;
     margin-left: 200px;
-}
-
-
-label {
+  }
+  
+  label {
     font-weight: bold;
-}
+  }
+  
+  .chatbot-container {
+    
+    margin: 0 auto;
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    z-index: 9999;
+    text-align: center;
+    
+  }
+  
+  .chatbot-container h2 {
+    margin-top: 0;
+  }
+  
+  .chatbot-container textarea {
+    width: 100%;
+    resize: none;
+    background-color: black;
+    color: white;
+  }
+  
+  
+  .chatbot-container .button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  
+  .chatbot-container p {
+    margin: 10px 0;
+  }
+
+  .chatbot-container .completed-sentence {
+    margin: 10px 0;
+    padding: 10px;
+    display:block;
+    width:150px;
+    word-wrap:break-word;
+    height:200px;
+    display: table-cell;
+    
+    
+  }
+  
+  
