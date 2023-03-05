@@ -24,7 +24,7 @@ const Home = () => {
       {
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer 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`,
+          Authorization: `Bearer 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`,
         },
       }
     );
@@ -91,6 +91,7 @@ const Home = () => {
 
         {showImages && (
            <div className="image-container">
+            <br></br>
              <img src={require("./people.jpg")} alt="people" />
            </div>
          )}
