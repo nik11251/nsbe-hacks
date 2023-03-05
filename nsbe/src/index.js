@@ -3,10 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './i18n';
 import App from './App';
 import * as AWS from 'aws-sdk'
-import { ConfigurationOptions } from 'aws-sdk'
 
 const configuration = {
-    region: 'Canada',
+    region: 'us-east-1',
     secretAccessKey: 'VbWDX/lQUkP6SDnWW49mCl8M1b3FALHKmq4l/8BH',
     accessKeyId: 'AKIA4NXSIX23DVJTOZH2'
 }
