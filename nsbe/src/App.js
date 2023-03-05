@@ -16,6 +16,7 @@ import JoinPage from "./pages/Video2/JoinPage";
 import RoomPage from "./pages/Video2/RoomPage";
 import Video3 from "./pages/Video3/webpack.config";
 import VideoApp from "./pages/Video/VideoApp";
+import VideoPlayer from "./pages/video4/VideoPlayer";
 
 function App() {
     const {token, setToken} = useToken()
@@ -63,6 +64,10 @@ function App() {
                                 <Route
                                     path="/nsbe-hacks/video"
                                     element={<VideoApp />}
+                                />
+                                <Route
+                                    path="/nsbe-hacks/video4"
+                                    element={<VideoPlayer />}
                                 />
 
                             </Route>
