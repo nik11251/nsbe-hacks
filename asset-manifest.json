@@ -1,15 +1,15 @@
 {
-  "main.css": "/nsbe-hacks/video/static/css/main.9e12ef67.chunk.css",
-  "main.js": "/nsbe-hacks/video/static/js/main.3dbc8e7f.chunk.js",
-  "main.js.map": "/nsbe-hacks/video/static/js/main.3dbc8e7f.chunk.js.map",
-  "runtime~main.js": "/nsbe-hacks/video/static/js/runtime~main.71450ab5.js",
-  "runtime~main.js.map": "/nsbe-hacks/video/static/js/runtime~main.71450ab5.js.map",
-  "static/js/2.a06301d7.chunk.js": "/nsbe-hacks/video/static/js/2.a06301d7.chunk.js",
-  "static/js/2.a06301d7.chunk.js.map": "/nsbe-hacks/video/static/js/2.a06301d7.chunk.js.map",
-  "index.html": "/nsbe-hacks/video/index.html",
-  "precache-manifest.00ceddbacc0d3d65d8d40e61659c0057.js": "/nsbe-hacks/video/precache-manifest.00ceddbacc0d3d65d8d40e61659c0057.js",
-  "service-worker.js": "/nsbe-hacks/video/service-worker.js",
-  "static/css/main.9e12ef67.chunk.css.map": "/nsbe-hacks/video/static/css/main.9e12ef67.chunk.css.map",
-  "static/media/Uoft.png": "/nsbe-hacks/video/static/media/Uoft.b9c68d4c.png",
-  "static/media/people.jpg": "/nsbe-hacks/video/static/media/people.d0d1b06e.jpg"
+  "main.css": "/nsbe-hacks/static/css/main.9e12ef67.chunk.css",
+  "main.js": "/nsbe-hacks/static/js/main.3dbc8e7f.chunk.js",
+  "main.js.map": "/nsbe-hacks/static/js/main.3dbc8e7f.chunk.js.map",
+  "runtime~main.js": "/nsbe-hacks/static/js/runtime~main.3111d029.js",
+  "runtime~main.js.map": "/nsbe-hacks/static/js/runtime~main.3111d029.js.map",
+  "static/js/2.f63c8f10.chunk.js": "/nsbe-hacks/static/js/2.f63c8f10.chunk.js",
+  "static/js/2.f63c8f10.chunk.js.map": "/nsbe-hacks/static/js/2.f63c8f10.chunk.js.map",
+  "index.html": "/nsbe-hacks/index.html",
+  "precache-manifest.12bf9f6d567143071bf8330f43e7588b.js": "/nsbe-hacks/precache-manifest.12bf9f6d567143071bf8330f43e7588b.js",
+  "service-worker.js": "/nsbe-hacks/service-worker.js",
+  "static/css/main.9e12ef67.chunk.css.map": "/nsbe-hacks/static/css/main.9e12ef67.chunk.css.map",
+  "static/media/Uoft.png": "/nsbe-hacks/static/media/Uoft.b9c68d4c.png",
+  "static/media/people.jpg": "/nsbe-hacks/static/media/people.d0d1b06e.jpg"
 }
