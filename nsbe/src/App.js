@@ -26,11 +26,11 @@ function App() {
             />
             <Route
                 path="/nsbe-hacks/login"
-                element={<Login setToken={setToken}/>}
+                
             />
             <Route
                 path="/nsbe-hacks/signup"
-                element={<Signup setToken={setToken}/>}
+                
             />
             </Route>
         )
