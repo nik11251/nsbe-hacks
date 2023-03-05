@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "93bacc9bf7afc5e30cde",
+    "revision": "498e90322a89a336421b",
     "url": "/nsbe-hacks/static/css/main.9e12ef67.chunk.css"
   },
   {
-    "revision": "93bacc9bf7afc5e30cde",
-    "url": "/nsbe-hacks/static/js/main.23241cca.chunk.js"
+    "revision": "498e90322a89a336421b",
+    "url": "/nsbe-hacks/static/js/main.0e7552f9.chunk.js"
   },
   {
     "revision": "c56b9c14807910bfc154",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/nsbe-hacks/static/media/people.d0d1b06e.jpg"
   },
   {
-    "revision": "673d6c8398487e7463d537658a57a84a",
+    "revision": "90f6d7d8bd14ae87433c28751f0a31d8",
     "url": "/nsbe-hacks/index.html"
   }
 ];
