@@ -13,7 +13,7 @@ const configuration = {
 
 AWS.config.update(configuration)
 
-localStorage.setItem('token', "first_user");
+localStorage.setItem('token', "");
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
