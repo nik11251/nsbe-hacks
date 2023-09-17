@@ -1,1 +1,1 @@
-# nsbe-hacks 
+# nsbe-hacks - Ritvik, Artin, James, Nikifor
